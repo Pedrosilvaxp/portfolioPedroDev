@@ -3,10 +3,11 @@
 :root {
     --corPrincipal: #564787;
     --corSecundaria: #BFB1C1;
+    --corTerciaria: #13141A;
 }
 
 body {
-    background-color: black;
+    background-color: var(--corTerciaria);
     color: white;
 }
 
@@ -51,7 +52,7 @@ ul#navDesktop.navAtivo {
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.336);
+    background: rgba(19, 20, 26, 0.473);
     backdrop-filter: blur(6px);
 }
 #navDesktop a:hover {color: var(--corSecundaria);}
@@ -294,7 +295,7 @@ section#habilidades h1 {
 
 .descricaoDeLinguagem {
     padding: 0;
-    background: rgba(0, 0, 0, 0.616);
+    background: rgba(19, 20, 26, 0.603);
     position: relative;
     height: 0;
     bottom: 240px;
