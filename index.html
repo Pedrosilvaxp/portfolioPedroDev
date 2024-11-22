@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portifolio</title>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<h1 id="tituloDev">Front-End Developer</h1>
+
+			<ul id="navDesktop">
+				<li><a href="#" onclick="scrollAuto('header')">Inicio</a></li>
+				<li><a href="#" onclick="scrollAuto('#sobre')">Sobre</a></li>
+				<li><a href="#" onclick="scrollAuto('#projetos')">Projetos</a></li>
+				<li><a href="#" onclick="scrollAuto('#servicos')">Serviços</a></li>
+				<li><a href="#" onclick="scrollAuto('#contato')">Contato</a></li>
+			</ul>
+
+			<!-- Mobile -->
+			<div class="navMobileButton">
+				<div class="navRows"></div>
+				<div class="navRows"></div>
+				<div class="navRows"></div>
+			</div>
+			<ul id="navMobile">
+				<li><a href="#" onclick="scrollAuto('header')">Inicio</a></li>
+				<li><a href="#" onclick="scrollAuto('#sobre')">Sobre</a></li>
+				<li><a href="#" onclick="scrollAuto('#projetos')">Projetos</a></li>
+				<li><a href="#" onclick="scrollAuto('#servicos')">Serviços</a></li>
+				<li><a href="#" onclick="scrollAuto('#contato')">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="headerContainer">
+			<div id="containerApresentação">
+				<p>Olá, me chamo Pedro e seja bem vindo ao meu portifólio. Sou apaixonado por tecnologia, especialmente por desenvolvimento web.</p>
+
+				<a href="https://api.whatsapp.com/send?phone=5575999140212&text=Ol%C3%A1%2C%20Pedro%21" target="_blank" rel="external" class="contato">Contato</a>
+			</div>
+
+			<img src="imagens/fotoInicial.png" id="fotoPedroInicial" alt="foto do desenvolvedor">
+
+			<ul class="linksRedes">
+				<li><a href="https://www.instagram.com/upedro_dev/" target="_blank" rel="external"><i class='bx bxl-instagram-alt'></i></a></li>
+				<li><a href="https://www.linkedin.com/in/pedrosilvalk/" target="_blank" rel="external"><i class='bx bxl-linkedin-square' ></i></a></li>
+			</ul>
+		</section>
+		<!-- Fim de poster -->
+
+		<!-- Sobre mim -->
+		<section id="sobre">
+			<h1>Sobre mim</h1>
+
+			<div class="containerSobre">
+				<div class="blocoRoxo">
+					<img src="imagens/pedro.jpg" alt="foto do desenvolvedor">
+				</div>
+
+				<article id="artigoSobre">
+					<p>Me chamo Pedro Silva do Nascimento e atualmente estou cursando Técnico em Desenvolvimento de Sistemas SENAI, com o objetivo de me tornar Full-Stack.</p> <p>Ao conhecer a programação, me identifiquei com a área, por poder tornar sonhos em realidade e beneficiar várias pessoas com meu conhecimento na área. Com constante aprendizado, sigo me aprimorando nas tecnologias, melhorando sempre.</p>
+				</article>
+			</div>
+		</section>
+		<!-- Fim de sobre -->
+
+		<!-- Habilidades -->
+		<section id="habilidades">
+			<h1>Habilidades</h1>
+
+			<div class="containerHabilidades">
+
+				<div class="itemHabilidades">
+					<h2>JavaScript</h2>
+					<img src="imagens/js-logo.webp" class="linguagemLogo" alt="Imagem ilustrativa">
+
+					<div class="descricaoDeLinguagem">
+						<p>JavaScript é uma linguagem de programação que permite adicionar interatividade e dinamismo às páginas da web.</p>
+					</div>
+				</div>
+
+				<div class="itemHabilidades" >
+					<h2>HTML</h2>
+					
+					<img src="imagens/html-logo.webp" class="linguagemLogo" alt="Imagem ilustrativa">
+
+					<div class="descricaoDeLinguagem">
+						<p>HTML é a linguagem de marcação padrão usada para criar e estruturar páginas da web. Fornecendo a estrutura básica de uma página.</p>
+					</div>
+				</div>
+
+				<div class="itemHabilidades" >
+					<h2>CSS</h2>
+					<img src="imagens/css-logo.webp" class="linguagemLogo" alt="Imagem ilustrativa">
+
+					<div class="descricaoDeLinguagem">
+						<p>CSS é uma linguagem de estilo utilizada para descrever a apresentação de um documento HTML, como cores, fontes, espaçamentos e layout da página.</p>
+					</div>
+				</div>
+
+				<div class="itemHabilidades">
+					<h2>Python</h2>
+					<img src="imagens/logo_python.png" class="linguagemLogo" alt="Imagem ilustrativa">
+
+					<div class="descricaoDeLinguagem">
+						<p>Python é uma linguagem de programação de alto nível, amplamente utilizada devido à sua simplicidade e legibilidade.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Fim de habilidades -->
+
+		<!-- Projetos -->
+		<section id="projetos">
+			<h1>Projetos</h1>
+	
+			<div class="container"> 
+				<div class="item">
+					<img src="imagens/imob.png" alt="Foto ilustrativa de projeto" class="imagemDesktop">
+	
+					<div class="descricao-projeto">
+						<img src="imagens/imobMobile.png" class="imagemMobile" alt="Foto ilustrativa de projeto">
+	
+						<div>
+							<h2>IMOB</h2>
+							<p>Landing-page imobiliária</p>
+						</div>
+	
+						<div class="projetoLinks">
+							<a href="https://pedrosilvaxp.github.io/IMOB_Imobiliaria/" target="_blank" rel="external">Acessar</a><a href="https://github.com/Pedrosilvaxp/IMOB_Imobiliaria" target="_blank" rel="external">Repositório</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="imagens/find_people.png" alt="Foto ilustrativa de projeto" class="imagemDesktop">
+	
+					<div class="descricao-projeto">
+						<img src="imagens/find_peopleMobile.png" class="imagemMobile" alt="Foto ilustrativa de projeto">
+	
+						<div class="containerProjeto
+							">
+							<h2>Find People</h2>
+							<p>Buscador de pessoas</p>
+						</div>
+	
+						<div class="projetoLinks">
+							<a href="https://pedrosilvaxp.github.io/find_people/" target="_blank" rel="external">Acessar</a><a href="https://github.com/Pedrosilvaxp/find_people" target="_blank" rel="external">Repositório</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="imagens/lista-de-tarefas.png" alt="Foto ilustrativa de projeto" class="imagemDesktop">
+	
+					<div class="descricao-projeto">
+						<img src="imagens/todolistMobile.png" class="imagemMobile" alt="Foto ilustrativa de projeto">
+	
+						<div class="containerProjeto
+							">
+							<h2>To-do list</h2>
+							<p>Lista de tarefas</p>
+						</div>
+	
+						<div class="projetoLinks">
+							<a href="https://pedrosilvaxp.github.io/lista-de-tarefa/" target="_blank" rel="external">Acessar</a><a href="https://github.com/Pedrosilvaxp/lista-de-tarefa" target="_blank" rel="external">Repositório</a>
+						</div>
+					</div>
+				</div>
+	
+				<div class="item">
+					<img src="imagens/vipmotors.png" alt="Foto ilustrativa de projeto" class="imagemDesktop">
+	
+					<div class="descricao-projeto">
+						<img src="imagens/vip.png" class="imagemMobile" alt="Foto ilustrativa de projeto">
+	
+						<div class="containerProjeto
+							">
+							<h2>VipMotors</h2>
+							<p>Landing-page de concesionária</p>
+						</div>
+	
+						<div class="projetoLinks">
+							<a href="https://pedrosilvaxp.github.io/vipmotors/" target="_blank" rel="external">Acessar</a><a href="https://github.com/Pedrosilvaxp/vipmotors" target="_blank" rel="external">Repositório</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="imagens/ticonsultant.png" alt="Foto ilustrativa de projeto" class="imagemDesktop">
+	
+					<div class="descricao-projeto">
+						<img src="imagens/ticonsultantMobile.png" class="imagemMobile" alt="Foto ilustrativa de projeto">
+	
+						<div class="containerProjeto
+							">
+							<h2>TI Consultant</h2>
+							<p>Landing-page consultor de TI</p>
+						</div>
+	
+						<div class="projetoLinks">
+							<a href="https://pedrosilvaxp.github.io/ti-consultant/" target="_blank" rel="external">Acessar</a><a href="https://github.com/Pedrosilvaxp/ti-consultant" target="_blank" rel="external">Repositório</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="imagens/devin.png" alt="Foto ilustrativa de projeto" class="imagemDesktop">
+	
+					<div class="descricao-projeto">
+						<img src="imagens/devinMobile.png" class="imagemMobile" alt="Foto ilustrativa de projeto">
+	
+						<div class="containerProjeto
+							">
+							<h2>DEVINsane</h2>
+							<p>Landing-page de empresa de software</p>
+						</div>
+	
+						<div class="projetoLinks">
+							<a href="https://pedrosilvaxp.github.io/landing-devinsane/" target="_blank" rel="external">Acessar</a><a href="https://github.com/Pedrosilvaxp/landing-devinsane" target="_blank" rel="external">Repositório</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Fim de projetos -->
+
+		<!-- Servicos -->
+		<section id="servicos">
+			<h1>Serviços</h1>
+	
+			<div class="containerServicos">
+	
+				<div class="itemServicos">
+					<img src="https://img.icons8.com/?size=100&id=Gja3twU19y8L&format=png&color=000000" alt="">
+					<h2>Landing pages</h2>
+						<p>Se você quer anunciar a sua marca ou serviço, de uma forma atrativa e que impulsione seu negócio, entre em contato!</p>
+				</div>
+				<div id="rowCenter"></div>
+				<div class="itemServicos">
+					<img src="https://img.icons8.com/?size=100&id=102562&format=png&color=000000" alt="">
+					<h2>Sites</h2>
+						<p>Quer ter um site responsivo, otimizado e que atenda às suas necessidades de negócio, vamos criar juntos!</p>
+				</div>
+			</div>
+	
+			<a href="https://api.whatsapp.com/send?phone=5575999140212&text=Ol%C3%A1%2C%20Pedro.%20Estou%20interessado%20no%20desenvolvimento%20de%20sites." target="_blank" rel="external" class="linkPagina">Entrar em contato</a>
+		</section>
+		<!-- Fim de serviços -->
+
+		<!-- Contato -->
+		<aside id="contato">
+			<h1>Entre em contato comigo!</h1>
+			
+			<div class="containerCont">
+				<div class="containerContato">
+					<div class="itemContato">
+						<i class='bx bxl-instagram-alt'></i>
+						<a href="https://www.instagram.com/upedro_dev/" target="_blank" rel="external">@upedro_dev</a>
+					</div>
+					<div class="itemContato">
+						<i class='bx bxl-whatsapp' ></i>
+						<a href="https://api.whatsapp.com/send?phone=5575999140212&text=Ol%C3%A1%2C%20Pedro%21" target="_blank" rel="external">75 99914-0212</a>
+					</div>
+					<div class="itemContato">
+						<i class='bx bxl-linkedin-square' ></i>
+						<a href="https://www.linkedin.com/in/pedrosilvalk/" target="_blank" rel="external">Pedro Silva</a>
+					</div>
+				</div>
+	
+				<form action="https://formsubmit.co/b593cabf3ebe49d806f72c5225fea494" method="post" autocomplete="on">
+					<div>
+						<label for="nome">Nome:</label>
+						<input type="text" name="nome" placeholder="Seu nome" id="nome"  required>
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input type="text" name="email" placeholder="Seu email" id="email"  required>
+					</div>
+					<div>
+						<label for="mensagem">Sua mensagem:</label>
+						<textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" cols="30" rows="10" required></textarea>
+					</div>
+	
+					<input type="submit" value="Enviar" id="submit">
+					
+					<input type="hidden" name="_subject" value="Novo Contato Portifólio">
+                    <input type="hidden" name="_honey" style="display: none;">
+                    <input type="hidden" name="_captcha" value="false">
+				</form>
+			</div>
+		</aside>
+
+		<!-- Botão de voltar -->
+		<button id="botaoVoltar" onclick="scrollAuto('header')">
+			<i class='bx bx-chevrons-up'></i>
+		</button>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; Pedro Silva do Nascimento. Todos os direitos reservados 2024.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
