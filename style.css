@@ -46,13 +46,14 @@ ul#navDesktop {
     transition-duration: .3s;
 }
 ul#navDesktop.navAtivo {
+    border-radius: 10px;
     position: fixed;
     top: 10vh;
     width: 100%;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(19, 20, 26, 0.473);
+    background: rgba(19, 20, 26, 0.315);
     backdrop-filter: blur(6px);
 }
 #navDesktop a:hover {color: var(--corSecundaria);}
@@ -129,12 +130,12 @@ ul#navDesktop.navAtivo {
 /* MAIN */
 section.headerContainer {
     max-width: 1100px;
-    margin: 0 auto 15em;
+    margin: 0 auto 20em;
     height: 530px;
 }
 div#containerApresentação {
     position: relative;
-    top: 400px;
+    top: 300px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -147,6 +148,7 @@ div#containerApresentação {
     div#containerApresentação {justify-content: space-around;}
 }
 .headerContainer p {
+    border-radius: 6px;
     font-size: 16px;
     padding: 20px;
     max-width: 400px;
@@ -155,9 +157,12 @@ div#containerApresentação {
 }
 a.contato {
     background-color: var(--corPrincipal);
+    border: 1px solid var(--corSecundaria);
     padding: 20px;
-    color: white;
-    transition-duration: .2s; 
+    color: var(--corSecundaria);
+    transition-duration: .2s;
+    text-align: center;
+    width: 200px;
     z-index: 2;
 }
 a.contato:hover {
@@ -176,6 +181,7 @@ a.contato:hover {
     height: 800px;
     width: 70%;
     z-index: 1;
+    border-radius: 10px;
 }
 
 ul.linksRedes {
@@ -205,6 +211,7 @@ ul.linksRedes {
 section#sobre {
     max-width: 100%;
     margin-bottom: 5em;
+    padding-top: 70px;
 }
 #sobre h1 {
     border-bottom: 0 solid;
@@ -236,6 +243,7 @@ section#sobre {
     height: 350px;
     margin-top: -50px;
     object-fit: cover;
+    border-radius: 10px;
     z-index: 2;
 }
 article#artigoSobre {
@@ -262,67 +270,17 @@ article#artigoSobre {
 @media (max-width: 1174px) {
     h1#tituloDev {border-bottom: 0 solid;}
 }
-
-
-/* Habilidades */
-section#habilidades h1 {
-    transition-duration: .3s;
-    margin-bottom: 3em;
-}
 .containerHabilidades {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     column-gap: 40px;
-    row-gap: 8em;
-    padding: 10px 40px;
-}
-.itemHabilidades {
-    height: 220px;
-    width: 200px;
-}
-.itemHabilidades > h2 {
-    font: normal 17px 'Poppins';
-    text-align: center;
-    margin-bottom: 20px;
+    row-gap: 40px;
+    margin: 50px auto;
 }
 .linguagemLogo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.descricaoDeLinguagem {
-    padding: 0;
-    background: rgba(19, 20, 26, 0.603);
-    position: relative;
-    height: 0;
-    bottom: 240px;
-    opacity: 0;
-    pointer-events: none;
-    padding-top: 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    row-gap: 5px;
-    transition-duration: .2s;
-}
-.itemHabilidades:hover .descricaoDeLinguagem {
-    opacity: 1;
-    pointer-events: all;
-    height: 90%;
-    padding: 14% 10px 20px;
-}
-
-.descricaoDeLinguagem h2 {
-    font-size: 18px;
-}
-.descricaoDeLinguagem p {font-size: 14px;}
-.descricaoDeLinguagem a {
-    color: var(--corSecundaria);
-    text-align: center;
+    width: 50px;
 }
 
 /* Projetos */
@@ -330,7 +288,6 @@ section#projetos h1 {
     text-align: right;
     margin-bottom: 3em;
 }
-
 div.container {
     pointer-events: all;
     padding: 0 20px;
@@ -349,13 +306,13 @@ div.item {
 #projetos img {
     object-fit: cover;
     z-index: 130;
+    border-radius: 6px;
 }
 img.imagemDesktop {
     width: 100%;
     height: 235px;
 }
 img.imagemMobile {
-    border-radius: 6px;
     margin: -100px -20px 20px 20px;
     width: auto;
     height: 200px;
@@ -383,6 +340,7 @@ img.imagemMobile {
 .projetoLinks {margin-top: 20px;}
 .descricao-projeto a {
     background-color: var(--corPrincipal);
+    border-radius: 4px;
     padding: 10px;
     margin: 8px;
     font-size: 15px;
@@ -397,6 +355,32 @@ img.imagemMobile {
     .descricao-projeto {flex-wrap: wrap;}
     .descricao-projeto h2 {font-size: 18px;}
     .descricao-projeto p {font-size: 16px;}
+}
+
+#verMaisBtn {
+    padding: 8px 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    background-color: var(--corPrincipal);
+    color: white;
+    border: 0 solid;
+    border-radius: 4px;
+    width: 140px;
+    cursor: pointer;
+    transition-duration: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#verMaisBtn i {
+    font-size: 37px;
+}
+#verMaisBtn:hover {
+    background-color: var(--corSecundaria);
+    color: var(--corPrincipal);
+}
+div.item.esconderItem {
+    display: none;
 }
 
 /* Servicos */
@@ -434,7 +418,8 @@ img.imagemMobile {
 
 a.linkPagina {
     border: 1px solid var(--corPrincipal);
-    padding: 10px 20px;
+    padding: 17px 30px;
+    width: 250px;
     background-color: var(--corPrincipal);
     color: white;
     transition-duration: .2s;
@@ -552,8 +537,9 @@ form #submit {
 /* Tags e textos */
 section {
     max-width: 1100px;
-    margin: 0 auto 7em;
+    margin: 0 auto 10em;
     padding-top: 100px;
+    
 }
 h1 {
     margin: 0 40px 1em;
@@ -565,8 +551,9 @@ ul {
 a {
     color: var(--corPrincipal);
     text-decoration: none;
+    border-radius: 6px; 
 }
-
+strong {color: var(--corSecundaria);}
 
 /* Botão de voltar */
 #botaoVoltar {
