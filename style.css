@@ -518,8 +518,8 @@ form #submit {
     a.contato {margin: 0px;}
     .headerContainer p {
         width: auto;
-        height: 100px; 
-        padding-bottom: 70px;
+        height: 100px;
+        padding-bottom: 60px;
     }
     h1#tituloDev {font-size: 40px;}
     #fotoPedroInicial {
@@ -527,7 +527,7 @@ form #submit {
         padding-top: 0;
     }
     div#containerApresentação {
-        top: 500px;
+        top: 400px;
         justify-content: center;
         bottom: -22vh;
     }
