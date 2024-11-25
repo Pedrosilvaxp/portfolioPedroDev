@@ -82,7 +82,7 @@ window.Effect = ScrollReveal({
     reset: false
 });
 
-Effect.reveal("#tituloDev", {
+Effect.reveal("h1#tituloDev", {
     distance: '200%',
     origin: 'left',
     delay: 900
@@ -101,4 +101,10 @@ Effect.reveal(".reveal .imagemMobile", {
 Effect.reveal('.blocoRoxo img', {
     origin: 'left',
     distance: '200%',
+});
+Effect.reveal('#rowCenter', {
+    delay: 200,
+    afterReveal: (el) => {
+        el.style.maxHeight = '300px';
+    }
 });

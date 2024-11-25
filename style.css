@@ -25,7 +25,7 @@ h1#tituloDev {
     max-width: 400px;
     margin-left: -60px;
     font-size: 4em;
-    padding-left: 10px;
+    padding-left: 20px;
     color: var(--corSecundaria);
     border-bottom: 5px solid var(--corPrincipal);
     border-bottom-left-radius: 20px;
@@ -300,7 +300,7 @@ div.container {
     justify-content: space-around;
     column-gap: 40px;
     row-gap: 5em;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     position: relative;
     z-index: 100;
 }
@@ -410,9 +410,10 @@ div.item.esconderItem {
 }
 
 #rowCenter {
-    height: 300px;
+    max-height: 0;
     width: 2px;
     background-color: var(--corPrincipal);
+    transition-duration: .3s;
 }
 
 .itemServicos h2 {
@@ -441,18 +442,23 @@ aside#contato {
     max-width: 1000px;
     margin: 0 auto 40px;
 }
-aside#contato h1 {
+#contato h1 {
     text-align: center;
+    margin-bottom: 1em;
+}
+#contato  h2 {
+    font-size: 17px;
     margin-bottom: 2em;
 }
-
 
 /* Form */
 .containerCont {
     display: flex;
     align-items: top;
     justify-content: center;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
+    row-gap: 60px;
 }
 form {
     padding: 20px 100px;
@@ -478,6 +484,7 @@ form div {
 }
 form #submit {
     background-color: var(--corSecundaria);
+    color: var(--corPrincipal);
     max-width: 150px;
     border-radius: 3px;
     border: 1px solid var(--corSecundaria);
@@ -542,12 +549,11 @@ section {
     max-width: 1100px;
     margin: 0 auto 10em;
     padding-top: 100px;
-    
 }
 h1 {
     margin: 0 40px 1em;
     border-bottom: 2px solid var(--corPrincipal);
-} 
+}
 ul {
     list-style-type: none;
 }
