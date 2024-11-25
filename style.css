@@ -25,7 +25,10 @@ h1#tituloDev {
     max-width: 400px;
     margin-left: -60px;
     font-size: 4em;
+    padding-left: 10px;
     color: var(--corSecundaria);
+    border-bottom: 5px solid var(--corPrincipal);
+    border-bottom-left-radius: 20px;
 }
 nav a {
     font-size: 16px;
@@ -206,6 +209,9 @@ ul.linksRedes {
     h1#tituloDev {padding-left: 50px;}
     #fotoPedroInicial {width: 100%;}
 }
+@media (max-width: 1174px) {
+    h1#tituloDev {border-bottom: 0 solid;}
+}
 
 /* Sobre mim */
 section#sobre {
@@ -267,9 +273,6 @@ article#artigoSobre {
         margin-top: 0;
     }
 }
-@media (max-width: 1174px) {
-    h1#tituloDev {border-bottom: 0 solid;}
-}
 .containerHabilidades {
     display: flex;
     align-items: center;
@@ -282,6 +285,7 @@ article#artigoSobre {
 .linguagemLogo {
     width: 50px;
 }
+
 
 /* Projetos */
 section#projetos h1 {
@@ -314,7 +318,6 @@ img.imagemDesktop {
 }
 img.imagemMobile {
     margin: -100px -20px 20px 20px;
-    width: auto;
     height: 200px;
 }
 @media (max-width: 400px) {
@@ -511,9 +514,10 @@ form #submit {
 
 
 /* MEDIA QUERIES */
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+    h1#tituloDev {font-size: 40px;}
     nav {top: 3vh;}
-    img.imagemDesktop {height: 150px;} 
+    img.imagemDesktop {height: 165px;}
     img.imagemMobile {height: 150px;}
     a.contato {margin: 0px;}
     .headerContainer p {
@@ -521,9 +525,8 @@ form #submit {
         height: 100px;
         padding-bottom: 60px;
     }
-    h1#tituloDev {font-size: 40px;}
     #fotoPedroInicial {
-        margin-top: -40px;
+        margin-top: -43px;
         padding-top: 0;
     }
     div#containerApresentação {
