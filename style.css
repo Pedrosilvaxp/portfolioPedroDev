@@ -179,12 +179,25 @@ a.contato:hover {
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    object-fit: contain;
     padding-top: 50px;
-    height: 800px;
+    height: 730px;
     width: 70%;
     z-index: 1;
-    border-radius: 10px;
+    border-radius: 10px; 
+}
+@media (max-width: 650px) {
+    #fotoPedroInicial {
+        padding-top: 200px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 800px) {
+    h1#tituloDev {padding-left: 50px;}
+    #fotoPedroInicial {width: 100%;}
+}
+@media (max-width: 1174px) {
+    h1#tituloDev {border-bottom: 0 solid;}
 }
 
 ul.linksRedes {
@@ -205,13 +218,7 @@ ul.linksRedes {
     color: var(--corPrincipal);
 }
 
-@media (max-width: 800px) {
-    h1#tituloDev {padding-left: 50px;}
-    #fotoPedroInicial {width: 100%;}
-}
-@media (max-width: 1174px) {
-    h1#tituloDev {border-bottom: 0 solid;}
-}
+
 
 /* Sobre mim */
 section#sobre {
@@ -533,8 +540,8 @@ form #submit {
         padding-bottom: 60px;
     }
     #fotoPedroInicial {
-        margin-top: -43px;
-        padding-top: 0;
+        margin-top: -20px;
+        padding-top: 150px;
     }
     div#containerApresentação {
         top: 400px;
