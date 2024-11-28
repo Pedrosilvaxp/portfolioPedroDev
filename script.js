@@ -42,41 +42,6 @@ function scrollAuto(call) {
 }
 
 
-// Ver mais projetos
-const botaoVerMais = document.querySelector('#verMaisBtn');
-const itens = document.querySelectorAll('#projetos .item');
-
-let verificarItensEscondidos = true;
-
-// Apagando itens de projetos apartir do terceiro
-for (let item = 0; item < itens.length; item++) {
-    if (verificarItensEscondidos == true && item > 1) {
-        itens[item].classList.add('esconderItem');
-    }
-}
-function verMais() {
-    if (verificarItensEscondidos) {
-        for (let item = 0; item < itens.length; item++) {
-            if (item > 1) {
-                itens[item].classList.remove('esconderItem');
-            }
-        }
-        botaoVerMais.innerHTML = "Ver menos <i class='bx bx-chevron-up'></i>";
-
-        verificarItensEscondidos = false;
-    } else {
-        for (let item = 0; item < itens.length; item++) {
-            if (item > 1) {
-                itens[item].classList.add('esconderItem');
-            }
-        }
-        botaoVerMais.innerHTML = "Ver mais <i class='bx bx-chevron-down'></i>";
-
-        verificarItensEscondidos = true;
-    }
-}
-
-
 // ScrollReveal
 window.Effect = ScrollReveal({
     reset: false
@@ -90,11 +55,11 @@ Effect.reveal("h1#tituloDev", {
 Effect.reveal(".headerContainer", {
     duration: 2000
 });
-Effect.reveal(".reveal .imagemDesktop", {
+Effect.reveal(".imagemDesktop", {
     distance: '100%',
     origin: 'left'
 });
-Effect.reveal(".reveal .imagemMobile", {
+Effect.reveal(".imagemMobile", {
     distance: '100%',
     delay: 1000 
 });

@@ -367,31 +367,6 @@ img.imagemMobile {
     .descricao-projeto p {font-size: 16px;}
 }
 
-#verMaisBtn {
-    padding: 8px 10px;
-    font-family: 'Poppins';
-    font-size: 15px;
-    background-color: var(--corPrincipal);
-    color: white;
-    border: 0 solid;
-    border-radius: 4px;
-    width: 140px;
-    cursor: pointer;
-    transition-duration: .2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#verMaisBtn i {
-    font-size: 37px;
-}
-#verMaisBtn:hover {
-    background-color: var(--corSecundaria);
-    color: var(--corPrincipal);
-}
-div.item.esconderItem {
-    display: none;
-}
 
 /* Servicos */
 #servicos {
