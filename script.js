@@ -33,6 +33,8 @@ window.onscroll = () => {
 };
 
 
+
+
 // Scroll automático
 function scrollAuto(call) {
     const area = document.querySelector(call);

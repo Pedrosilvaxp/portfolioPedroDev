@@ -303,7 +303,7 @@ div.container {
     pointer-events: all;
     padding: 0 20px;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-around;
     column-gap: 40px;
     row-gap: 5em;
